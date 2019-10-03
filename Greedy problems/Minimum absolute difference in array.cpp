@@ -27,10 +27,11 @@ int minAbsoluteDiff(int arr[], int n) {
      * Don't read input, it is passed as function argument.
      * Return output and don't print it.
      * Taking input and printing output is handled automatically.
+     *Loop are running correctly can be added easily
      */
   sort(arr,arr+n);
   int min = arr[n-1]-arr[0];
-  for(int i=1;i<n;i++){
+  for(int i=1;i<n;i=i+1){
     if(min>(arr[i]-arr[i-1])){
       min = arr[i]-arr[i-1];
     }
