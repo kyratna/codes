@@ -8,7 +8,7 @@ int main(){
 	int *varr=new int[n];
 
 	for (int i = 0; i < n; i++)
-	{
+	{        // initialization.
 		cin >> varr[i];
 	}
 
