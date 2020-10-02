@@ -31,4 +31,10 @@ int returnFirstSetBit(int n){
     return 0;
 }
 
+int returntFirstsetbit(int n){ // fast O(1). 
+  if(n ==0){
+  return 0;
+  }
+ return log2(n & -n) +1;
 
+}
